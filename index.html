@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌈 FUNKY CALC 🔥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background particles -->
+  <div id="particles-container"></div>
+
+  <!-- Floating decorative orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+
+  <!-- Confetti container -->
+  <div id="confetti-container"></div>
+
+  <!-- Main wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Funky title -->
+    <h1 class="title" id="title">🌈 FUNKY CALC 🔥</h1>
+    <p class="subtitle">⚡ ULTRA MEGA TURBO EDITION ⚡</p>
+
+    <!-- Calculator container -->
+    <div class="calc-outer">
+      <div class="rainbow-border"></div>
+      <div class="calc-container" id="calc-container">
+
+        <!-- Scanline overlay -->
+        <div class="scanlines"></div>
+
+        <!-- Display -->
+        <div class="display-wrapper">
+          <div class="display-expression" id="display-expression">0</div>
+          <div class="display-result" id="display-result"></div>
+        </div>
+
+        <!-- Button grid -->
+        <div class="button-grid">
+          <!-- Row 1 -->
+          <button class="btn btn-clear"    data-action="clear">C</button>
+          <button class="btn btn-sign"     data-action="sign">+/-</button>
+          <button class="btn btn-percent"  data-action="percent">%</button>
+          <button class="btn btn-op"       data-value="/">÷</button>
+
+          <!-- Row 2 -->
+          <button class="btn btn-num btn-7" data-value="7">7</button>
+          <button class="btn btn-num btn-8" data-value="8">8</button>
+          <button class="btn btn-num btn-9" data-value="9">9</button>
+          <button class="btn btn-op"       data-value="*">×</button>
+
+          <!-- Row 3 -->
+          <button class="btn btn-num btn-4" data-value="4">4</button>
+          <button class="btn btn-num btn-5" data-value="5">5</button>
+          <button class="btn btn-num btn-6" data-value="6">6</button>
+          <button class="btn btn-op"       data-value="-">−</button>
+
+          <!-- Row 4 -->
+          <button class="btn btn-num btn-1" data-value="1">1</button>
+          <button class="btn btn-num btn-2" data-value="2">2</button>
+          <button class="btn btn-num btn-3" data-value="3">3</button>
+          <button class="btn btn-op"       data-value="+">+</button>
+
+          <!-- Row 5 -->
+          <button class="btn btn-zero"     data-value="0">0</button>
+          <button class="btn btn-dot"      data-action="decimal">.</button>
+          <button class="btn btn-back"     data-action="backspace">⌫</button>
+          <button class="btn btn-equals"   data-action="equals">=</button>
+        </div>
+
+        <!-- Sound toggle -->
+        <div class="sound-toggle-wrapper">
+          <button class="sound-btn" id="sound-toggle" title="Toggle sound">🔊</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Easter egg message -->
+    <div id="easter-egg" class="easter-egg hidden">🎮 L33T H4X0R M0D3 ACTIVATED! 🎮</div>
+
+    <!-- Decorative emoji scatter -->
+    <div class="emoji-scatter">
+      <span class="e1">✨</span><span class="e2">🔥</span><span class="e3">💥</span>
+      <span class="e4">⚡</span><span class="e5">🌀</span><span class="e6">🎆</span>
+      <span class="e7">💫</span><span class="e8">🚀</span>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
